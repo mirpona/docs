@@ -11,7 +11,7 @@
   "navigation": {
     "tabs": [
       {
-        "tab": "Guides",
+        "tab": "Scaling Customer Success",
         "groups": [
           {
             "group": "Building a CS system",
@@ -50,8 +50,8 @@
   },
   "footer": {
     "socials": {
-      "github": "https://github.com/monamaret",
-      "linkedin": "https://linkedin.com/i/monamaret"
+      "github": "https://github.com/mona-maret",
+      "linkedin": "https://linkedin.com/in/monamaret"
     }
   }
 }

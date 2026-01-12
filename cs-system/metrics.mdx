@@ -1,0 +1,180 @@
+---
+title: 'Metrics and KPIs'
+description: 'Text, title, and styling in standard markdown'
+---
+
+<Card
+  title="Success Metrics and KPIs"
+  horizontal
+>
+
+1. What metrics/KPIs in your opinion would…
+    - Signal customer success is succeeding as a function
+    - Determine customer health for our product
+    - Determine what feature requests engineering or product should prioritize?
+
+</Card>
+
+
+# Overall Customer Success metrics
+
+The following high level metrics are the most key to establishing a baseline and tracking over time at the high level:
+
+- [NRR](#nrr) (Net Revenue Retention)
+- [Customer Retention](#customer-retention), [Renewal](#customer-renewal) and [Churn](#customer-churn) rates
+- [total number of custom tier sites/deployments](#total-deployments)
+- [Aggregate PAR/FAR (Product/Feature Adoption Rate)](#aggregate-feature-adoption-rate)
+- [Aggregate customer health](#aggregate-customer-health)
+- [Aggregate customer satisfaction](#aggregate-customer-satisfaction)
+
+Management and tracking of these metrics should be closely integrated into the CSM daily activity processes.
+
+### NRR
+
+Net Revenue Retention, expressed as a percentage compared to the prior interval. 120%+ is considered 'good' NRR for high growth startups.
+
+Anything below 100% means you have a serious churn problem to be addressed and should be considered one of the biggest red flags.
+
+### Customer retention
+
+Count of customers with CSM coverage (so Custom/enterprise tier) at current time compared to count at a previous interval. Should be tracked monthly and annually as a count and as a percentage of growth or contraction.
+
+### Customer renewal
+
+Count of customers on Custom/enterprise tier who have renewed their engagement for another year at the prior renewal. Also expressed as an annual and monthly growth or contraction, as a percentage.
+
+### Customer churn
+
+Count of customers on Custom/enterprise tier who have declined to renew at the current renewal, tracked monthly and annually. Also expressed as an annual and monthly growth or contraction, as a percentage.
+
+### Total deployments
+
+Count of total site deployments. Also expressed as an annual and monthly growth or contraction, as a percentage.
+
+### Aggregate Feature Adoption Rate
+
+Each major feature (Agent, Assistant, API, MCP server, etc) is expressed as a component percentage and each customer's active usage is tracked by feature. For example, a customer that was only using Assistant would have a 20% FAR.
+
+Aggregate FAR is calculated as a running average across all tracked customers.
+
+### Aggregate customer health
+
+Individual customer health is a calculated value based on the [customer health metrics](#customer-health-metrics). Aggregate value is an average of all individual customer health metrics.
+
+### Aggregate customer satisfaction
+
+Individual customer satisfaction is a _manual value_ tracked and maintained by the Customer Success Manager. See [customer satisfaction](#customer-satisfaction-score) below.
+
+Aggregate customer satisfaction is a running average across all tracked customers.
+
+
+## Metric success signals
+
+Generally speaking, once the baseline is established, you want to see everything but [customer churn](#customer-churn) going up month over month and year over year.
+
+When you see a decline from the running normal state in anything but churn, you want to be able to tie it to something known (such as an incident or a feature issue).
+
+Plateau in these metrics, especially sustained more than a couple of months, are a trigger to look deeper at the product/features, customer profile and competition.
+
+Churn should be somewhat predictable based on customer activity or sentiment. See [more on customer churn](#more-on-customer-churn) for more.
+
+
+
+# Customer health metrics
+
+The following customer-level metrics are tracked and combined into a single [Customer Health Score](#customer-health-score):
+
+- [Customer Health Score](#customer-health-score)
+- [Customer Satisfaction Score](#customer-satisfaction-score)
+- Individual deployment metrics:
+    - [open ticket count and average time to resolution](#open-ticket-count-and-average-time-to-resolution)
+    - [open feature requests count and average time to deployment](#open-feature-request-count-and-average-time-to-deployment)
+    - [total MCP tool calls](#total-mcp-tool-calls)
+    - [total API calls](#total-api-calls)
+    - [Total Assistant calls](#total-assistant-calls)
+    - [FAR](#far)
+    - [total dashboard seats](#total-dashboard-seats)
+
+### Customer Health Score
+
+This metric is a calculated value based on the values of every other value at the customer level. You define the scale for what is 'healthy' and not. A common one I've used successfully in the past:
+
+- simple "traffic light" color coding based on a scale
+- you define the scale values based on your goals, for example:
+    - red: less than 50% 
+    - yellow: 50-75%
+    - green: 75%-90%
+    - strong green: 90%+
+- each metric is expressed as numeric value and averaged across all metrics to get the final number for the score
+
+### Customer Satisfaction Score
+
+This is one of the few manually-tracked and subjectively defined metrics. It should be assessed by the CSM and the sentiment should be part of the cadence discusion. Interactions should be tracked over time in a customer success platform or other tool for tracking customer journey milestones and interactions. 
+
+Sentiment includes comments related to competition, other tools, churn signals, and other interpersonal commentary gained from the CSM interactions with the customer and other internal teams.
+
+The score itself should be a simple 1-5 scale with 5 being the most satisfied and 0 being the least.
+
+### Open ticket count and average time to resolution
+
+Count of open support tickets from an internal support ticket tool (Zendesk, Pylon, etc). 
+
+Average time to resolve for all tickets closed. Also expressed as an annual and monthly growth or contraction, as a percentage.
+
+### Open feature request count and average time to deployment
+
+Count of open feature requests from an internal product/engineering ticket tool (Jira, Linear).
+
+Average time to deploy for all closed enhancement. Also expressed as an annual and monthly growth or contraction, as a percentage.
+
+### Total MCP tool calls
+
+Count of MCP tool calls made to deployment's `/mcp` endpoint. Also expressed as an annual and monthly growth or contraction, as a percentage.
+
+### Total API calls
+
+Count of total API calls made on deployment. Also expressed as an annual and monthly growth or contraction, as a percentage.
+
+### Total Assistant calls
+
+Count of total messages sent using the Assistant, per deployment. Also expressed as an annual and monthly growth or contraction, as a percentage.
+
+If overage fees, track the overage amount by month and express as a monthly growth or contraction, as a percentage.
+
+### FAR
+
+Feature adoption on major features, in this case:
+
+- Agent
+- API
+- Assistant
+- MCP
+
+Each feature would be a component percentage of the FAR, so using API and Assistant means 50% FAR.
+
+### Total dashboard seats
+
+Count of total number of dashboard-access seats for the deployment.
+
+## More on customer churn
+
+As you move upmarket you will find that procurement and IT tooling are handled separately, and it can be difficult to rely on customer champions and contacts to reliably send churn signals related to cost.
+
+That aside, a big part of the CSM engagement cadence with the customer is for establishing that trusted relationship so that accurate signals related to the following can still be received:
+
+- feature drift/feature need
+- competitor bundling
+- support or managed infrastructure issues
+
+# Prioritization metrics
+
+Regarding the following deployment and/or customer-level metrics:
+
+- number of external/support tickets opened by customer related to a feature/fix
+- work commitment of internal tickets associated with fix/feature related to issue
+- business justification
+- engineering resources
+- product roadmap
+
+
+## Additional KPIs to consider
